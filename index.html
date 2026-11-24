@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover"/>
+<title>Benedict &amp; Sophie — Wedding Invitation</title>
+<meta name="description" content="Wedding of Benedict Rutherford &amp; Sophie Langley · Saturday, 20 November 2027 · 2 PM · The Kensington Rooms, London"/>
+<meta property="og:title" content="Benedict &amp; Sophie | Wedding Invitation">
+<meta property="og:description" content="Saturday, 20 November 2027 · 2 PM · The Kensington Rooms, London — You are warmly invited.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://talvoco-wedding-b4.vercel.app/">
+<link rel="canonical" href="https://talvoco-wedding-b4.vercel.app/">
+<meta property="og:image" content="https://talvoco-wedding-b4.vercel.app/image/og-image.png?v=3">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta property="og:image:alt" content="B &amp; S monogram">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Benedict &amp; Sophie | Wedding Invitation">
+<meta name="twitter:image" content="https://talvoco-wedding-b4.vercel.app/image/og-image.png?v=3">
+<link rel="icon" href="favicon.ico?v=2" sizes="any">
+<link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png?v=2">
+<link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png?v=2">
+<link rel="icon" type="image/png" sizes="192x192" href="image/android-chrome-192x192.png?v=2">
+<link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png?v=2">
+<link rel="manifest" href="site.webmanifest?v=2">
+<meta name="theme-color" content="#F9F4EC">
+<link rel="preload" as="image" href="image/envelope-poster.webp">
+<link rel="preload" as="image" href="image/hero-base.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Italiana&family=Lora:ital,wght@0,400;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Playfair+Display:ital,wght@0,400;1,400&family=Cinzel:wght@400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet">
+<style>
+:root{
+  --mocha:#6B1E2A;
+  --mocha-lt:#82303D;
+  --mocha-dk:#4A121C;
+  --ivory:#F9F4EC;
+  --gold:#A9823F;
+  --gold-lt:#C9A86A;
+  --ivory-2:#F4EDE6;
+  --sand:#EADDD8;
+  --rose:#CFA3A8;
+  --rose-deep:#8C2F3C;
+  --rose-mid:#A8505C;
+  --rose-blush:#F3E3E3;
+  --sage:#B9868C;
+  --sage-deep:#6B1E2A;
+  --ink:#6B1E2A;
+  --ink-soft:#5C4246;
+  --muted:#9A8C8C;
+  --rule:rgba(169,130,63,.4);
+  --peach:#EBCFCF;
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html,body{width:100%;overflow-x:hidden}
+body{background:var(--ivory);color:var(--ink);font-family:'Cormorant Garamond',serif;font-size:19px;line-height:1.6;-webkit-font-smoothing:antialiased;font-weight:600}
+a{color:inherit;text-decoration:none}
+
+/* PETALS */
+.petals{position:fixed;inset:0;pointer-events:none;z-index:2;overflow:hidden}
+.petal{position:absolute;opacity:.4;animation:drift linear infinite}
+.petal:nth-child(1){left:5%;width:9px;height:9px;background:radial-gradient(ellipse at 30% 30%,var(--rose-blush),var(--rose) 70%);border-radius:50% 0 50% 50%;animation-duration:20s;animation-delay:0s}
+.petal:nth-child(2){left:18%;width:7px;height:7px;background:radial-gradient(ellipse at 30% 30%,#F3E6E6,var(--rose) 70%);border-radius:50% 0 50% 50%;animation-duration:25s;animation-delay:-4s;opacity:.3}
+.petal:nth-child(3){left:38%;width:11px;height:11px;background:radial-gradient(ellipse at 30% 30%,var(--peach),#C7959B 70%);border-radius:50% 0 50% 50%;animation-duration:22s;animation-delay:-9s;opacity:.35}
+.petal:nth-child(4){left:57%;width:8px;height:8px;background:radial-gradient(ellipse at 30% 30%,var(--rose-blush),var(--rose) 70%);border-radius:50% 0 50% 50%;animation-duration:18s;animation-delay:-14s}
+.petal:nth-child(5){left:72%;width:10px;height:10px;background:radial-gradient(ellipse at 30% 30%,#EEDDDD,var(--rose-deep) 70%);border-radius:50% 0 50% 50%;animation-duration:28s;animation-delay:-6s;opacity:.3}
+.petal:nth-child(6){left:88%;width:7px;height:7px;background:radial-gradient(ellipse at 30% 30%,var(--peach),#BF8A90 70%);border-radius:50% 0 50% 50%;animation-duration:24s;animation-delay:-17s;opacity:.35}
+@keyframes drift{0%{top:-5%;transform:translateX(0) rotate(0deg)}100%{top:105%;transform:translateX(-45px) rotate(360deg)}}
+@keyframes fadeIn{to{opacity:1}}
+
+/* ============ ENVELOPE (video) ============ */
+body.no-scroll{overflow:hidden}
+#envelope-overlay{position:fixed;inset:0;z-index:1000;background:#DFD5CB;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:opacity 1.2s cubic-bezier(.4,0,.2,1),visibility 1.2s}
+#envelope-overlay.gone{opacity:0;visibility:hidden;pointer-events:none}
+#envelope-overlay video{width:100%;height:100%;object-fit:cover;display:block;background:#DFD5CB url(image/envelope-poster.webp) center/cover no-repeat}
+@media (min-aspect-ratio:3/4){#envelope-overlay video{width:auto;height:100%;aspect-ratio:9/16;max-width:100%;box-shadow:0 0 60px rgba(107,30,42,.12)}}
+#envelope-overlay:focus-visible{outline:2px solid var(--gold);outline-offset:-6px}
+
+#main{display:none}
+#main.show{display:block}
+
+/* STICKY BADGE */
+#mono-badge{position:fixed;top:10px;left:50%;transform:translateX(-50%);z-index:900;width:44px;height:44px;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .4s;background:rgba(249,244,236,.94);border-radius:50%;border:1px solid rgba(207,163,168,.4);backdrop-filter:blur(8px);box-shadow:0 2px 12px rgba(140,47,60,.18);pointer-events:none}
+#mono-badge.show{opacity:1}
+#mono-badge svg{width:34px;height:34px}
+
+/* SECTION COMMONS */
+.section-eyebrow{font-family:'Cinzel',serif;letter-spacing:.42em;font-size:9.5px;color:var(--gold);font-weight:600;margin-bottom:14px}
+.section-title{font-family:'Italiana',serif;font-weight:400;font-size:clamp(36px,9vw,54px);color:var(--ink);margin-bottom:30px;line-height:1.1}
+.divider{display:flex;align-items:center;justify-content:center;gap:14px;margin:30px 0 10px}
+.divider span{flex:1;height:1px;background:var(--rule);max-width:76px}
+.divider .dot{width:6px;height:6px;transform:rotate(45deg);background:var(--gold-lt)}
+
+/* SCROLL CUE */
+.scroll-cue{background:rgba(249,244,236,.94);padding:6px 16px 4px;border-radius:20px;box-shadow:0 2px 12px rgba(140,47,60,.12);position:fixed;left:50%;transform:translateX(-50%);bottom:calc(22px + env(safe-area-inset-bottom,0px));z-index:900;display:flex;flex-direction:column;align-items:center;gap:7px;cursor:pointer;opacity:0;visibility:hidden;transition:opacity .5s ease,visibility .5s ease;pointer-events:none}
+.scroll-cue.show{opacity:1;visibility:visible;pointer-events:auto;animation:cueBob 2.2s ease-in-out infinite}
+.scroll-cue .cue-text{font-family:'Cinzel',serif;letter-spacing:.34em;font-size:8.5px;color:var(--rose-deep);text-transform:uppercase}
+.scroll-cue .cue-arrow{width:22px;height:22px;stroke:var(--rose-deep);stroke-width:1.4;fill:none;opacity:.85}
+@keyframes cueBob{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(7px)}}
+
+/* HERO (illustrated stage) */
+.hero{background:#F9F4EC;display:flex;justify-content:center}
+.hero-frame{position:relative;width:min(100%,calc(100svh * 941 / 1671),560px);aspect-ratio:941/1671;background:url(image/hero-base.webp) center/100% 100% no-repeat;container-type:inline-size;overflow:hidden}
+/* hanging drapes, vines & chandelier: cut-out layers that sway slowly from the top */
+.hang{position:absolute;top:0;height:31.119%;pointer-events:none;will-change:transform;backface-visibility:hidden}
+.hang-left{left:-3.188%;width:45.590%;transform-origin:50% 0;animation:swayL 9s ease-in-out infinite}
+.hang-right{left:57.386%;width:45.802%;transform-origin:50% 0;animation:swayR 10s ease-in-out infinite}
+.hang-chand{left:29.756%;width:40.276%;transform-origin:50.13% 0;animation:swing 7s ease-in-out infinite}
+@keyframes swayL{0%,100%{transform:skewX(1.5deg)}50%{transform:skewX(-1.5deg)}}
+@keyframes swayR{0%,100%{transform:skewX(-1.3deg)}50%{transform:skewX(1.6deg)}}
+@keyframes swing{0%,100%{transform:rotate(-1.3deg)}50%{transform:rotate(1.3deg)}}
+.hero-text{z-index:1}
+@media(min-width:600px){.hero-frame{-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}}
+@supports not (height:1svh){.hero-frame{width:min(100%,calc(100vh * 941 / 1671),560px)}}
+.hero-text{position:absolute;left:8%;right:8%;top:24.5%;bottom:46%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.hero-eyebrow{font-family:'Cinzel',serif;font-weight:500;letter-spacing:.32em;font-size:clamp(7px,2.5cqw,12px);color:var(--gold);margin-bottom:1cqw}
+.hero-names{position:relative;isolation:isolate;display:inline-block;font-family:'Italiana',serif;font-weight:400;font-size:clamp(44px,16cqw,90px);line-height:1;color:var(--ink);margin:2cqw 0 4cqw;text-align:center}
+.hero-names .n1,.hero-names .n2{display:block;position:relative;z-index:1}
+.hero-names .amp{position:absolute;z-index:0;left:50%;top:50%;transform:translate(-50%,-50%);font-family:'Playfair Display',serif;font-style:italic;font-size:2.3em;line-height:1;color:rgba(214,172,108,.62);pointer-events:none}
+.hero-rule{width:34%;height:1px;background:linear-gradient(90deg,transparent,var(--gold-lt),transparent);margin:2.4cqw auto 2cqw}
+.hero-date{font-family:'Cinzel',serif;font-weight:500;letter-spacing:.28em;font-size:clamp(8px,2.9cqw,14px);color:var(--ink-soft)}
+.hero-place{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(12px,4cqw,19px);color:var(--ink-soft);margin-top:.6cqw}
+.hero-text>*{opacity:0;transform:translateY(10px);transition:opacity 1.1s ease,transform 1.1s ease}
+.hero.on .hero-text>*{opacity:1;transform:none}
+.hero.on .hero-text>*:nth-child(2){transition-delay:.25s}.hero.on .hero-text>*:nth-child(3){transition-delay:.5s}.hero.on .hero-text>*:nth-child(4){transition-delay:.8s}.hero.on .hero-text>*:nth-child(5){transition-delay:1s}
+
+/* INVITE */
+.invite{background:var(--ivory);padding:56px 28px 56px;position:relative;text-align:center;display:flex;align-items:flex-start;justify-content:center}
+.invite-top{position:absolute;top:18px;left:0;right:0;display:flex;flex-direction:column;align-items:center;pointer-events:none}
+.invite-lead{font-family:'Pinyon Script',cursive;font-weight:400;font-size:clamp(19px,5.2vw,24px);line-height:1.5;color:var(--rose-deep)}
+.invite-lead-sub{font-style:italic;font-size:12px;color:var(--muted);margin-top:10px}
+.invite-top .orn{margin-top:10px;opacity:.9}
+.invite-names{font-family:'Italiana',serif;font-weight:400;font-size:clamp(66px,18vw,112px);line-height:.88;color:var(--ink);margin:6px 0 34px}
+.invite-names .n2{display:inline-block;margin-left:.55em}
+.invite-names .amp{color:var(--rose-deep);font-family:'Playfair Display',serif;font-style:italic;font-size:.52em;display:inline-block;vertical-align:middle;margin:0 .1em}
+.invite-verse{margin:20px auto 16px;max-width:40ch;padding:0 4px}
+.invite-verse .en{font-style:italic;font-size:15px;color:var(--ink-soft);line-height:1.7}
+.invite-verse .ref{font-family:'Cinzel',serif;font-size:7.5px;letter-spacing:.32em;color:var(--rose-deep);margin-top:10px;font-weight:500}
+.invite-body{max-width:44ch;margin:0 auto}
+.invite .invite-lead{font-size:clamp(22px,6vw,28px)}
+.invite-body p{font-size:15.5px;line-height:1.75;color:var(--ink-soft);margin-bottom:14px;font-style:italic}
+.invite-body .accent{color:var(--rose-deep);font-weight:600}
+
+/* FAMILIES */
+.families{background:var(--ivory);padding:76px 24px 70px;text-align:center}
+.fam{display:grid;grid-template-columns:1fr;gap:6px;max-width:760px;margin:6px auto 0;align-items:center}
+@media(min-width:700px){.fam{grid-template-columns:1fr auto 1fr;gap:18px}}
+.fam-arch{position:relative;margin:0 auto;width:min(100%,300px);padding:84px 22px 30px;border:1px solid rgba(169,130,63,.55);border-radius:150px 150px 6px 6px}
+.fam-arch::before{content:'';position:absolute;inset:7px;border:1px solid rgba(169,130,63,.25);border-radius:143px 143px 3px 3px;pointer-events:none}
+.fam-initial{position:absolute;top:12px;left:50%;transform:translateX(-50%);font-family:'Italiana',serif;font-size:64px;line-height:1;color:rgba(169,130,63,.16)}
+.fam-role{position:relative;font-family:'Cinzel',serif;font-size:9px;letter-spacing:.38em;color:var(--gold);font-weight:600;margin-bottom:12px}
+.fam-name{position:relative;font-family:'Italiana',serif;font-weight:400;font-size:clamp(28px,8vw,34px);line-height:1.12;color:var(--ink)}
+.fam-orn{display:flex;align-items:center;justify-content:center;gap:8px;margin:16px 0 14px}
+.fam-orn span{width:34px;height:1px;background:rgba(169,130,63,.6)}
+.fam-orn i{width:5px;height:5px;background:var(--gold-lt);transform:rotate(45deg)}
+.fam-of{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;color:var(--muted);font-weight:500}
+.fam-parents{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;color:var(--ink-soft);margin-top:2px;line-height:1.35}
+.fam-amp{font-family:'Playfair Display',serif;font-style:italic;font-size:46px;line-height:1;color:var(--gold-lt);padding:8px 0}
+
+/* EVENTS */
+.details{background:#F9F4EC;padding:76px 24px 66px}
+.details-inner{max-width:520px;margin:0 auto}
+.details-lede{text-align:center;color:var(--ink-soft);font-size:17px;max-width:36ch;margin:0 auto 36px;line-height:1.7;font-style:italic}
+.event-card{background:var(--ivory);border:1px solid rgba(140,47,60,.16);border-radius:10px;padding:22px 18px 18px;margin-bottom:14px;box-shadow:0 6px 20px rgba(107,30,42,.04);transition:all .4s;text-align:left}
+.event-card:hover{box-shadow:0 12px 36px rgba(140,47,60,.12);transform:translateY(-2px)}
+.event-head{display:flex;align-items:center;gap:12px;padding-bottom:13px;margin-bottom:13px;border-bottom:1px dashed rgba(140,47,60,.28)}
+.event-num{width:30px;height:30px;border-radius:50%;background:var(--rose-deep);color:var(--ivory);display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:10px;font-weight:500;flex-shrink:0}
+.event-title{font-family:'Cinzel',serif;letter-spacing:.26em;font-size:10.5px;color:var(--ink);font-weight:500}
+.event-row{display:flex;gap:12px;align-items:flex-start;padding:9px 0;border-bottom:1px solid rgba(107,30,42,.05)}
+.event-row:last-of-type{border-bottom:none}
+.row-icon{width:34px;height:34px;border-radius:50%;background:#F9F4EC;border:1px solid rgba(140,47,60,.2);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--rose-deep)}
+.row-icon svg{width:15px;height:15px}
+.row-body{flex:1;min-width:0}
+.row-label{font-family:'Cinzel',serif;letter-spacing:.25em;font-size:8.5px;color:var(--muted);margin-bottom:2px}
+.row-value{font-family:'Italiana',serif;font-size:19px;color:var(--ink);line-height:1.25}
+.row-sub{font-size:15px;color:var(--ink-soft);font-style:italic;margin-top:1px}
+.event-actions{display:flex;gap:8px;margin-top:13px;flex-wrap:wrap}
+.btn{flex:1;min-width:110px;display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:11px;border-radius:3px;font-family:'Cinzel',serif;letter-spacing:.18em;font-size:9.5px;cursor:pointer;border:none;transition:all .2s;font-weight:500}
+.btn:active{transform:scale(.97)}
+.btn-primary{background:var(--rose-deep);color:var(--ivory)}
+.btn-primary:hover{background:var(--ink)}
+.btn-ghost{background:transparent;color:var(--ink);border:1px solid rgba(107,30,42,.2)}
+.btn-ghost:hover{background:#F9F4EC}
+.btn svg{width:11px;height:11px}
+
+/* Lace event card */
+.lace-card{position:relative;width:min(100%,380px);margin:0 auto 22px;aspect-ratio:662/962;container-type:inline-size}
+.lace-card img{position:absolute;inset:0;width:100%;height:100%;display:block}
+.lace-text{position:absolute;left:24%;right:24%;top:23%;bottom:23%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#F4E6D6}
+.lace-title{font-family:'Pinyon Script',cursive;font-weight:400;font-size:15cqw;line-height:.95;color:#F7EBDD}
+.lace-title span{font-size:.8em}
+.lace-rule{width:40%;height:1px;background:linear-gradient(90deg,transparent,rgba(232,200,150,.85),transparent);margin:4.5cqw auto 3.5cqw}
+.lace-text p{margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;line-height:1.3}
+.lace-day{font-family:'Cinzel',serif!important;font-size:3.6cqw;letter-spacing:.28em;color:#E8C896}
+.lace-date{font-size:6.2cqw}
+.lace-time{font-size:5.2cqw;font-style:italic}
+.lace-cal{margin-top:6cqw;display:inline-flex;align-items:center;gap:1.6cqw;padding:1.9cqw 3.8cqw;border:1px solid rgba(232,200,150,.75);border-radius:999px;background:rgba(247,235,221,.08);color:#F7EBDD;font-family:'Cinzel',serif;font-size:2.4cqw;letter-spacing:.16em;white-space:nowrap;font-weight:600;cursor:pointer;transition:background .2s,color .2s}
+.lace-cal:hover,.lace-cal:active{background:#F7EBDD;color:var(--mocha)}
+.lace-cal svg{width:2.8cqw;height:2.8cqw}
+
+/* COUNTDOWN */
+.countdown{background:radial-gradient(ellipse 90% 70% at 50% 0%,#7E2A36 0%,var(--mocha) 45%,var(--mocha-dk) 100%);padding:66px 24px;text-align:center;position:relative;overflow:hidden}
+.countdown .section-eyebrow{color:var(--gold-lt)}
+.countdown .section-title{color:var(--ivory)}
+.cd{display:flex;justify-content:center;align-items:flex-start;gap:2px;max-width:520px;margin:0 auto}
+.cd-sep{font-family:'Italiana',serif;font-size:clamp(40px,12vw,64px);line-height:1;color:var(--gold-lt);margin-top:-.06em}
+.cd-box{flex:1;padding:0 2px}
+.cd-box b{display:block;font-family:'Italiana',serif;font-weight:400;font-size:clamp(40px,12vw,64px);color:var(--ivory);line-height:1}
+.cd-box small{display:block;margin-top:10px;font-family:'Cinzel',serif;font-size:9px;letter-spacing:.28em;color:var(--gold-lt)}
+.cd-note{font-style:italic;color:#E6D3C4;margin-top:20px;font-size:17px}
+
+/* VENUE */
+.venue{background:#F9F4EC;padding:76px 24px 66px;text-align:center}
+.venue-name{font-family:'Italiana',serif;font-size:clamp(34px,9vw,46px);color:var(--ink);line-height:1.1}
+.venue-addr{font-style:italic;color:var(--ink-soft);font-size:17px;margin:4px 0 26px}
+.map-wrap{max-width:520px;margin:0 auto 16px;border-radius:12px;overflow:hidden;border:1px solid rgba(140,47,60,.18);box-shadow:0 12px 36px rgba(107,30,42,.07);aspect-ratio:4/3;background:var(--ivory)}
+.map-wrap iframe{width:100%;height:100%;border:0;display:block}
+.map-placeholder{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;background:linear-gradient(135deg,var(--rose-blush) 0%,var(--peach) 100%)}
+.map-placeholder svg{width:30px;height:30px;color:var(--rose-deep);opacity:.7}
+.map-placeholder span{font-family:'Cinzel',serif;font-size:8px;letter-spacing:.28em;color:var(--rose-deep);opacity:.8}
+.venue .event-actions{max-width:520px;margin:0 auto}
+
+/* Events & map: deep mocha accents, gold labels */
+.venue .map-placeholder{background:linear-gradient(135deg,#F3EBDF 0%,#EFE3DC 100%)}
+.details .event-num,.venue .btn-primary,.details .btn-primary{background:var(--ink);border-color:var(--ink)}
+.details .btn-primary:hover,.venue .btn-primary:hover{background:var(--mocha-dk)}
+.details .row-icon,.details .btn-ghost,.venue .btn-ghost,.venue .map-placeholder svg,.venue .map-placeholder span{color:var(--ink)}
+.details .event-card,.details .row-icon,.venue .map-wrap{border-color:rgba(107,30,42,.18)}
+.details .event-head{border-bottom-color:rgba(107,30,42,.22)}
+
+.details .row-label,.venue .venue-addr{color:var(--rose-deep)}
+
+/* BLESSING (dark band, like the reference contact block) */
+.blessing{background:var(--ivory);padding:56px 24px 48px;text-align:center;color:var(--ink);border-top:1px solid rgba(140,47,60,.12)}
+.blessing .section-eyebrow{color:var(--rose-deep);margin-bottom:16px}
+.blessing .blessing-line{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(21px,5.6vw,26px);line-height:1.6;color:var(--ink);max-width:30ch;margin:0 auto 10px}
+.blessing p.en{color:var(--ink-soft);font-size:16px;max-width:34ch;margin:0 auto;font-style:italic}
+
+/* FOOTER */
+.footer{background:#4A121C;padding:30px 24px 30px;text-align:center;color:var(--ivory);border-top:1px solid rgba(207,163,168,.2)}
+.footer .couple-initials{font-family:'Cinzel',serif;letter-spacing:.55em;font-size:11.5px;color:var(--gold-lt);margin-bottom:16px}
+.footer .tagline{font-family:'Italiana',serif;font-style:italic;font-size:17px;color:#CCB0B3;margin-bottom:6px}
+.footer .sign-off{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:#B0979A;margin-bottom:14px}
+.footer .brand{font-family:'Cinzel',serif;letter-spacing:.32em;font-size:8.5px;color:#B79EA1}
+.footer .brand a{color:var(--peach);border-bottom:1px solid rgba(235,207,207,.3);padding-bottom:1px}
+
+/* MUSIC */
+#music-btn{position:fixed;right:18px;bottom:calc(22px + env(safe-area-inset-bottom,0px));z-index:950;width:46px;height:46px;border-radius:50%;border:1px solid rgba(201,168,106,.7);background:rgba(107,30,42,.92);color:#F7EBDD;display:none;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 4px 16px rgba(107,30,42,.3);-webkit-tap-highlight-color:transparent}
+#music-btn.show{display:flex}
+#music-btn svg{width:17px;height:17px}
+#music-btn .ic-pause{display:none}
+#music-btn.playing .ic-play{display:none}
+#music-btn.playing .ic-pause{display:block}
+#music-btn.playing{animation:musicPulse 2.4s ease-in-out infinite}
+@keyframes musicPulse{0%,100%{box-shadow:0 4px 16px rgba(107,30,42,.3),0 0 0 0 rgba(201,168,106,.45)}50%{box-shadow:0 4px 16px rgba(107,30,42,.3),0 0 0 8px rgba(201,168,106,0)}}
+
+/* UTILS */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .9s ease,transform .9s ease}
+.reveal.on{opacity:1;transform:none}
+.toast{position:fixed;bottom:28px;left:50%;transform:translateX(-50%) translateY(80px);background:var(--rose-deep);color:var(--ivory);padding:11px 20px;border-radius:999px;font-family:'Cinzel',serif;font-size:10.5px;letter-spacing:.2em;opacity:0;transition:all .3s;z-index:9999;pointer-events:none}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+@media(min-width:640px){
+  .families,.details,.venue,.countdown,.blessing{padding-left:44px;padding-right:44px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
+</style>
+</head>
+<body class="no-scroll">
+
+<!-- PETALS -->
+<div class="petals"><div class="petal"></div><div class="petal"></div><div class="petal"></div><div class="petal"></div><div class="petal"></div><div class="petal"></div></div>
+
+<!-- STICKY MONOGRAM -->
+<div id="mono-badge">
+  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill="none">
+    <circle cx="50" cy="50" r="48" fill="#F9F4EC" stroke="rgba(201,168,106,.7)" stroke-width="1"/>
+    <circle cx="50" cy="50" r="42" fill="none" stroke="rgba(207,163,168,.35)" stroke-width=".5"/>
+    <text x="30" y="62" text-anchor="middle" font-family="Italiana, serif" font-size="34" fill="#6B1E2A">B</text>
+    <text x="50" y="62" text-anchor="middle" font-family="Playfair Display, serif" font-size="18" fill="#C9A86A" font-style="italic">&amp;</text>
+    <text x="70" y="62" text-anchor="middle" font-family="Italiana, serif" font-size="34" fill="#A9823F">S</text>
+  </svg>
+</div>
+
+<!-- ENVELOPE (video) -->
+<div id="envelope-overlay" role="button" tabindex="0" aria-label="Tap to open the invitation">
+  <video id="env-video" src="video/welcome.mp4" poster="image/envelope-poster.webp" muted playsinline webkit-playsinline preload="auto" disablepictureinpicture></video>
+</div>
+
+<div id="main">
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-frame" role="img" aria-label="Floral wedding stage with chandelier">
+    <img class="hang hang-left" src="image/hang-left.webp" alt="" aria-hidden="true">
+    <img class="hang hang-right" src="image/hang-right.webp" alt="" aria-hidden="true">
+    <img class="hang hang-chand" src="image/hang-chandelier.webp" alt="" aria-hidden="true">
+    <div class="hero-text">
+      <div class="hero-eyebrow">THE WEDDING OF</div>
+      <h1 class="hero-names" aria-label="Benedict &amp; Sophie"><span class="amp" aria-hidden="true">&amp;</span><span class="n1">Benedict</span><span class="n2">Sophie</span></h1>
+      <div class="hero-rule"></div>
+      <div class="hero-date">SATURDAY · 20 NOVEMBER 2027</div>
+      <div class="hero-place">The Kensington Rooms, London</div>
+    </div>
+  </div>
+</section>
+
+<!-- INVITE -->
+<section class="invite">
+  <div class="reveal">
+    <div class="invite-lead">With joy in our hearts</div>
+    <div class="invite-lead-sub">and with God's blessing, we celebrate</div>
+    <div class="divider" style="margin:22px 0 26px"><span></span><div class="dot"></div><span></span></div>
+    <div class="invite-body">
+      <p><span class="accent">Together with their families,</span> we joyfully invite you to witness and bless the union of our beloved children as they begin this beautiful journey together.</p>
+    </div>
+    <div class="invite-verse">
+      <p class="en">“Love suffereth long, and is kind; love envieth not; love vaunteth not itself. Love beareth all things, believeth all things, hopeth all things, endureth all things.”</p>
+      <div class="ref">1 CORINTHIANS 13:4-7</div>
+    </div>
+    <div class="divider"><span></span><div class="dot"></div><span></span></div>
+  </div>
+</section>
+
+<!-- COUNTDOWN -->
+<section class="countdown">
+  <div class="reveal">
+    <div class="section-eyebrow">— COUNTING THE DAYS —</div>
+    <h2 class="section-title">Until The Wedding</h2>
+    <div class="cd" id="cd">
+      <div class="cd-box"><b id="cd-d">00</b><small>DAYS</small></div>
+      <span class="cd-sep" aria-hidden="true">:</span>
+      <div class="cd-box"><b id="cd-h">00</b><small>HOURS</small></div>
+      <span class="cd-sep" aria-hidden="true">:</span>
+      <div class="cd-box"><b id="cd-m">00</b><small>MINS</small></div>
+      <span class="cd-sep" aria-hidden="true">:</span>
+      <div class="cd-box"><b id="cd-s">00</b><small>SECS</small></div>
+    </div>
+    <p class="cd-note" id="cd-note">Saturday, 20 November 2027 · 2:00 PM</p>
+  </div>
+</section>
+
+<!-- THE OCCASIONS -->
+<section class="details">
+  <div class="details-inner reveal">
+    <div class="section-eyebrow" style="text-align:center">— THE OCCASIONS —</div>
+    <h2 class="section-title" style="text-align:center">Join Us</h2>
+    <p class="details-lede">Kindly join us on our special day and share in our joy and happiness.</p>
+
+    <!-- WEDDING: lace card -->
+    <div class="lace-card">
+      <img src="image/lace-frame.webp" alt="" aria-hidden="true" loading="lazy" decoding="async">
+      <div class="lace-text">
+        <h3 class="lace-title">Wedding<br><span>Ceremony</span></h3>
+        <div class="lace-rule"></div>
+        <p class="lace-day">Saturday</p>
+        <p class="lace-date">20 November 2027</p>
+        <p class="lace-time">2:00 PM</p>
+        <button class="lace-cal" type="button" onclick="addToCal('Wedding — Benedict & Sophie',EVENTS.wedding)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>ADD TO CALENDAR</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MEET OUR FAMILIES -->
+<section class="families">
+  <div class="reveal">
+    <div class="section-eyebrow">— WITH THEIR FAMILIES —</div>
+    <h2 class="section-title">Meet Our Families</h2>
+    <div class="fam">
+      <div class="fam-arch">
+        <div class="fam-initial" aria-hidden="true">B</div>
+        <div class="fam-role">THE GROOM</div>
+        <div class="fam-name">Benedict<br>Rutherford</div>
+        <div class="fam-orn" aria-hidden="true"><span></span><i></i><span></span></div>
+        <div class="fam-of">beloved son of</div>
+        <div class="fam-parents">Mr &amp; Mrs Hugh Rutherford</div>
+      </div>
+      <div class="fam-amp" aria-hidden="true">&amp;</div>
+      <div class="fam-arch">
+        <div class="fam-initial" aria-hidden="true">S</div>
+        <div class="fam-role">THE BRIDE</div>
+        <div class="fam-name">Sophie<br>Langley</div>
+        <div class="fam-orn" aria-hidden="true"><span></span><i></i><span></span></div>
+        <div class="fam-of">beloved daughter of</div>
+        <div class="fam-parents">Mr &amp; Mrs Charles Langley</div>
+      </div>
+    </div>
+    <div class="divider"><span></span><div class="dot"></div><span></span></div>
+  </div>
+</section>
+
+<!-- VENUE -->
+<section class="venue" id="venue">
+  <div class="reveal">
+    <div class="section-eyebrow">— WEDDING VENUE —</div>
+    <div class="venue-name">The Kensington Rooms</div>
+    <div class="venue-addr">Kensington Church Street, London</div>
+    <div class="map-wrap">
+      <iframe src="https://maps.google.com/maps?q=Kensington,+London&output=embed" title="The Kensington Rooms, London on Google Maps" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+    <div class="event-actions">
+      <a class="btn btn-primary" href="#" data-maps target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>OPEN IN MAPS</a>
+      <button class="btn btn-ghost" type="button" onclick="shareInvite()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>SHARE</button>
+    </div>
+  </div>
+</section>
+
+<!-- BLESSING -->
+<section class="blessing">
+  <div class="section-eyebrow">— OUR BLESSING —</div>
+  <p class="blessing-line">Whither thou goest, I will go; and where thou lodgest, I will lodge.</p>
+  <p class="en">“Thy people shall be my people, and thy God my God.” — Ruth 1:16</p>
+</section>
+
+<footer class="footer">
+  <div class="couple-initials">B &nbsp;·&nbsp; S</div>
+  <div class="tagline">With warm regards —<br>Rutherford &amp; Langley Families</div>
+  <div class="sign-off">We can’t wait to celebrate with you</div>
+  <div class="brand">CRAFTED BY <a href="https://talvoco.com" target="_blank" rel="noopener">TALVOCO</a></div>
+</footer>
+
+</div>
+
+<div class="scroll-cue" id="scrollCue">
+  <span class="cue-text">Scroll</span>
+  <svg class="cue-arrow" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+</div>
+<!-- Background music: public/audio/music.mp3 (the button stays hidden until it exists). Credit: see MUSIC-LICENSES.md -->
+<audio id="bg-music" src="audio/music.mp3" loop preload="auto" playsinline></audio>
+<button type="button" id="music-btn" aria-label="Play music">
+  <svg class="ic-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+  <svg class="ic-pause" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+</button>
+<div class="toast" id="toast"></div>
+
+<script>
+/* ============================================================
+   WEDDING DETAILS — edit these when the dates/venue are final.
+   Times are UK time (Europe/London). Leave "start" empty until known:
+   the countdown and calendar buttons hide themselves until then.
+   ============================================================ */
+/* demo values: replace per customer */
+var EVENTS={
+  wedding:{start:'2027-11-20T14:00',end:'2027-11-20T22:00',location:'The Kensington Rooms, Kensington Church Street, London'}
+};
+var MAPS_URL='https://www.google.com/maps/search/?api=1&query=Kensington%2C%20London';
+
+// Load display fonts up front (main content is hidden until the envelope opens)
+if(document.fonts&&document.fonts.load){
+  ['400 1em "Italiana"','400 1em "Pinyon Script"','italic 400 1em "Playfair Display"'].forEach(function(f){
+    document.fonts.load(f,'Benedict Sophie').catch(function(){});
+  });
+}
+
+/* Background music — starts the moment the envelope is tapped (browsers only allow audio after a tap) */
+var bgMusic=document.getElementById('bg-music'),musicBtn=document.getElementById('music-btn'),musicWanted=false,musicOk=true;
+function syncMusicBtn(){var on=!bgMusic.paused;musicBtn.classList.toggle('playing',on);musicBtn.setAttribute('aria-label',on?'Pause music':'Play music');}
+function playMusic(){
+  musicWanted=true;bgMusic.volume=.7;                // audible straight away
+  var p=bgMusic.play();if(p&&p.catch)p.catch(function(){});
+}
+bgMusic.addEventListener('error',function(){musicOk=false;musicBtn.classList.remove('show');});
+if(bgMusic.error)musicOk=false;
+bgMusic.addEventListener('play',syncMusicBtn);bgMusic.addEventListener('pause',syncMusicBtn);
+musicBtn.addEventListener('click',function(){if(bgMusic.paused){playMusic();}else{musicWanted=false;bgMusic.pause();}});
+// iPhones can pause the music when another media element starts; pick it up again on the next tap
+function resumeMusic(){if(musicOk&&musicWanted&&bgMusic.paused)bgMusic.play().catch(function(){});}
+['touchend','click'].forEach(function(e){document.addEventListener(e,function(ev){if(ev.target.closest&&ev.target.closest('#music-btn'))return;resumeMusic();},{passive:true});});
+document.addEventListener('visibilitychange',function(){if(document.hidden)bgMusic.pause();else if(musicWanted)bgMusic.play().catch(function(){});});
+
+/* Envelope: tapping plays the opening video, then the invitation fades in */
+var revealIO=null;
+function showMain(){
+  var overlay=document.getElementById('envelope-overlay'),main=document.getElementById('main');
+  if(main.classList.contains('show'))return;
+  main.classList.add('show');
+  if(musicOk)musicBtn.classList.add('show');
+  resumeMusic();
+  document.body.classList.remove('no-scroll');
+  window.scrollTo(0,0);
+  requestAnimationFrame(function(){overlay.classList.add('gone');setTimeout(function(){document.getElementById('hero').classList.add('on');},350);});
+  revealIO=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add('on');});},{threshold:.1});
+  document.querySelectorAll('.reveal').forEach(function(el){revealIO.observe(el);});
+  setTimeout(function(){var c=document.getElementById('scrollCue');if(window.scrollY<60)c.classList.add('show');},1800);
+  autoScroll.start(3500);
+}
+(function(){
+  var overlay=document.getElementById('envelope-overlay'),v=document.getElementById('env-video'),started=false;
+  function open(){
+    if(started)return;
+    playMusic();                                       // first thing on the tap, so the browser allows it
+    started=true;
+    overlay.style.cursor='default';
+    var fallback=setTimeout(showMain,6000);              // never get stuck if the video can't play
+    v.addEventListener('ended',function(){clearTimeout(fallback);showMain();});
+    var p=v.play();
+    if(p&&p.catch)p.catch(function(){v.muted=true;v.play().catch(function(){clearTimeout(fallback);showMain();});});
+  }
+  overlay.addEventListener('click',open);
+  overlay.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();open();}});
+})();
+
+/* Auto scroll: glides down the invitation after it opens.
+   Stops for good as soon as the guest touches the screen, scrolls, clicks or presses a key; also stops at the bottom. */
+var autoScroll=(function(){
+  var SPEED=38;                                // pixels per second
+  var on=false,stopped=false,pos=0,last=0,timer=0;
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function maxY(){return document.documentElement.scrollHeight-window.innerHeight;}
+  function frame(t){
+    if(!on)return;
+    var dt=last?Math.min(t-last,100):0;last=t;
+    if(Math.abs(window.scrollY-pos)>2)pos=window.scrollY;
+    pos=Math.min(pos+SPEED*dt/1000,maxY());
+    window.scrollTo(0,pos);
+    if(pos>=maxY()-1){stop();return;}
+    requestAnimationFrame(frame);
+  }
+  function stop(){stopped=true;on=false;clearTimeout(timer);}
+  window.addEventListener('scroll',function(){if(on&&window.scrollY<pos-3)stop();},{passive:true});
+  ['touchstart','touchmove','pointerdown','wheel','keydown','mousedown'].forEach(function(e){window.addEventListener(e,function(){if(document.getElementById('main').classList.contains('show'))stop();},{passive:true});});
+  return {start:function(delay){
+    if(reduce||on||stopped)return;
+    timer=setTimeout(function(){if(stopped)return;on=true;pos=window.scrollY;last=0;requestAnimationFrame(frame);},delay||0);
+  }};
+})();
+
+window.addEventListener('scroll',function(){
+  document.getElementById('mono-badge').classList.toggle('show',window.scrollY>180);
+  document.getElementById('scrollCue').classList.toggle('show',window.scrollY<=60);
+},{passive:true});
+document.getElementById('scrollCue').addEventListener('click',function(){
+  document.querySelector('.invite').scrollIntoView({behavior:'smooth'});
+});
+
+/* Maps links & calendar buttons only show once filled in above */
+document.querySelectorAll('[data-maps]').forEach(function(a){
+  if(MAPS_URL){a.href=MAPS_URL;a.target='_blank';a.rel='noopener';}else{a.style.display='none';}
+});
+document.querySelectorAll('[onclick^="addToCal"]').forEach(function(b){
+  var key=/EVENTS\.(\w+)/.exec(b.getAttribute('onclick'))[1];
+  if(!EVENTS[key].start)b.style.display='none';
+});
+
+/* countdown to the wedding (UK time) */
+(function(){
+  var box=document.querySelector('.countdown');
+  if(!EVENTS.wedding.start){document.getElementById('cd').style.display='none';document.getElementById('cd-note').textContent='Date to be announced';return;}
+  var target=new Date(EVENTS.wedding.start+':00+00:00').getTime();
+  var d=new Date(target);
+  document.getElementById('cd-note').textContent=d.toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long',year:'numeric',timeZone:'Europe/London'})+' · '+d.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit',timeZone:'Europe/London'});
+  function pad(n){return n<10?'0'+n:''+n;}
+  function tick(){
+    var diff=target-Date.now();
+    if(diff<=0){
+      document.getElementById('cd').style.display='none';
+      document.getElementById('cd-note').textContent='The big day is here!';
+      return;
+    }
+    document.getElementById('cd-d').textContent=pad(Math.floor(diff/864e5));
+    document.getElementById('cd-h').textContent=pad(Math.floor(diff%864e5/36e5));
+    document.getElementById('cd-m').textContent=pad(Math.floor(diff%36e5/6e4));
+    document.getElementById('cd-s').textContent=pad(Math.floor(diff%6e4/1e3));
+    setTimeout(tick,1000);
+  }
+  tick();
+})();
+
+function addToCal(title,ev){
+  function fmt(t){return t.replace(/[-:]/g,'')+'00';}
+  var url='https://calendar.google.com/calendar/render?action=TEMPLATE'
+    +'&text='+encodeURIComponent(title)
+    +'&dates='+fmt(ev.start)+'/'+fmt(ev.end||ev.start)
+    +'&ctz=Europe/London'
+    +'&details='+encodeURIComponent('Wedding of Benedict Rutherford & Sophie Langley')
+    +(ev.location?'&location='+encodeURIComponent(ev.location):'');
+  window.open(url,'_blank','noopener');
+}
+
+function toast(msg){
+  var t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');
+  setTimeout(function(){t.classList.remove('show');},2200);
+}
+function shareInvite(){
+  var data={title:document.title,text:'You are invited to the wedding of Benedict & Sophie',url:'https://talvoco-wedding-b4.vercel.app/'};
+  if(navigator.share){navigator.share(data).catch(function(){});}
+  else if(navigator.clipboard){navigator.clipboard.writeText('https://talvoco-wedding-b4.vercel.app/').then(function(){toast('LINK COPIED');});}
+}
+</script>
+</body>
+</html>
